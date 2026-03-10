@@ -23,14 +23,22 @@ Cloud and cybersecurity professional with 10+ years of IT infrastructure experie
 
 ### CompTIA Security+ — CertMaster Labs
 
+**Penetration Testing**
+
 | # | Lab | Technique | Status |
 |---|-----|-----------|--------|
 | 01 | [Directory Traversal](./security-plus/penetration-testing/01-directory-traversal.md) | Path Traversal / LFI | ✅ Complete |
 | 02 | [Command Injection](./security-plus/penetration-testing/02-command-injection.md) | OS Command Injection | ✅ Complete |
 | 03 | [File Upload & Reverse Shell](./security-plus/penetration-testing/03-file-upload-webshell.md) | RCE via File Upload + Metasploit | ✅ Complete |
-| 04 | [SQL Injection Detection](./security-plus/web-application-security/01-sql-injection-detection.md) | SQLi | 🔄 Upcoming |
-| 05 | [Incident Response Detection](./security-plus/incident-response/01-incident-response-detection.md) | Incident Response | 🔄 Upcoming |
-| 06 | [Digital Forensics](./security-plus/digital-forensics/01-performing-digital-forensics.md) | Digital Forensics | 🔄 Upcoming |
+
+**Vulnerability Management**
+
+| # | Lab | Technique | Status |
+|---|-----|-----------|--------|
+| 04 | [SQL Injection Exploitation](./security-plus/vulnerability-management/01-sql-injection-exploitation.md) | Boolean Logic, UNION-based Extraction, Schema Enumeration | ✅ Complete |
+| 05 | [SQLi Log Investigation](./security-plus/vulnerability-management/02-sqli-log-investigation.md) | Apache Log Analysis, IoC Identification, Percent-Encoding | ✅ Complete |
+| 06 | [Threat Feeds & Exploit Database](./security-plus/vulnerability-management/03-threat-feeds-exploit-db.md) | Threat Intelligence, AlienVault OTX, Exploit-DB, GHDB | ✅ Complete |
+| 07 | [Vulnerability Scanning (GSA/OpenVAS)](./security-plus/vulnerability-management/04-vulnerability-scanning.md) | Credentialed Scanning, CVE/NVD, CVSS v3.1 | ✅ Complete |
 
 ---
 
@@ -63,15 +71,16 @@ cybersecurity-labs/
 ├── README.md
 └── security-plus/
     ├── penetration-testing/
+    |   |── README.md 
     │   ├── 01-directory-traversal.md
     │   ├── 02-command-injection.md
     │   └── 03-file-upload-webshell.md
-    ├── web-application-security/
-    │   └── 01-sql-injection-detection.md
-    ├── incident-response/
-    │   └── 01-incident-response-detection.md
-    └── digital-forensics/
-        └── 01-performing-digital-forensics.md
+    ├── vulnerability-management/
+    |   |── README.md                        
+    |   ├── 01-sql-injection-exploitation.md
+    |   ├── 02-sqli-log-investigation.md
+    |   ├── 03-threat-feeds-exploit-db.md
+    |   └── 04-vulnerability-scanning.md
 ```
 
 ---
