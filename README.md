@@ -69,13 +69,13 @@ Cloud and cybersecurity professional with 10+ years of IT infrastructure experie
 ```
 cybersecurity-labs/
 ├── README.md
-└── security-plus/
-    ├── penetration-testing/
+└─📁security-plus/
+    ├─📁penetration-testing/
     |   |── README.md 
     │   ├── 01-directory-traversal.md
     │   ├── 02-command-injection.md
     │   └── 03-file-upload-webshell.md
-    ├── vulnerability-management/
+    ├─📁vulnerability-management/
     |   |── README.md                        
     |   ├── 01-sql-injection-exploitation.md
     |   ├── 02-sqli-log-investigation.md
