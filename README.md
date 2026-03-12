@@ -71,12 +71,14 @@ cybersecurity-labs/
 ├── README.md
 └─📁security-plus/
     ├─📁penetration-testing/
-    |   |── README.md 
+    |   |── README.md
+    |   ├── 4.jpg
     │   ├── 01-directory-traversal.md
     │   ├── 02-command-injection.md
     │   └── 03-file-upload-webshell.md
     ├─📁vulnerability-management/
-    |   |── README.md                        
+    |   |── README.md
+    |   ├── access.log.jpg                       
     |   ├── 01-sql-injection-exploitation.md
     |   ├── 02-sqli-log-investigation.md
     |   ├── 03-threat-feeds-exploit-db.md
