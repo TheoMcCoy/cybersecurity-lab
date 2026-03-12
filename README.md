@@ -67,43 +67,43 @@ Cloud and cybersecurity professional with 10+ years of IT infrastructure experie
 ## Repository Structure
 
 ```
-📁cybersecurity-labs/
-            ├───📁digital-forensics
-            │       01-forensic-drive-image-hidden-partition.md
-            │       02-recovering-deleted-files.md
-            │       03-file-carving.md
-            │       README.md
-            │
-            ├───📁incident-response
-            │   │   01-detecting-logon-events-wazuh.md
-            │   │   02-detecting-anti-forensics-wazuh.md
-            │   │   03-root-cause-analysis-security-alert.md
-            │   │   04-root-cause-analysis-breach-investigation.md
-            │   │   05-network-sniffing-wireshark.md
-            │   │   README.md
-            │   │
-            │   └───📁screenshots
-            │           auditpol-no-auditing.jpg
-            │           dftt-sourceforge.png
-            │           fdisk-carve-fat.jpg
-            │           proxyset-bat-email.jpg
-            │           testdisk-file-listing.jpg
-            │           wazuh-rule-92653-92652.jpg
-            │           wireshark-dns-capture.jpg
-            │
-            ├───📁penetration-testing
-            │       01-directory-traversal.md
-            │       02-command-injection.md
-            │       03-file-upload-webshell.md
-            │       4.jpg
-            │       README.md
-            │
-            └───📁vulnerability-management
-                    01-sql-injection-exploitation.md
-                    02-sqli-log-investigation.md
-                    03-threat-feeds-exploit-db.md
-                    04-vulnerability-scanning.md
-                    README.md
+📁cybersecurity-labs
+   ├───📁digital-forensics
+   │       01-forensic-drive-image-hidden-partition.md
+   │       02-recovering-deleted-files.md
+   │       03-file-carving.md
+   │       README.md
+   │
+   ├───📁incident-response
+   │   │   01-detecting-logon-events-wazuh.md
+   │   │   02-detecting-anti-forensics-wazuh.md
+   │   │   03-root-cause-analysis-security-alert.md
+   │   │   04-root-cause-analysis-breach-investigation.md
+   │   │   05-network-sniffing-wireshark.md
+   │   │   README.md
+   │   │
+   │   └───📁screenshots
+   │           auditpol-no-auditing.jpg
+   │           dftt-sourceforge.png
+   │           fdisk-carve-fat.jpg
+   │           proxyset-bat-email.jpg
+   │           testdisk-file-listing.jpg
+   │           wazuh-rule-92653-92652.jpg
+   │           wireshark-dns-capture.jpg
+   │
+   ├───📁penetration-testing
+   │       01-directory-traversal.md
+   │       02-command-injection.md
+   │       03-file-upload-webshell.md
+   │       4.jpg
+   │       README.md
+   │
+   └───📁vulnerability-management
+           01-sql-injection-exploitation.md
+           02-sqli-log-investigation.md
+           03-threat-feeds-exploit-db.md
+           04-vulnerability-scanning.md
+           README.md
 ```
 
 ---
