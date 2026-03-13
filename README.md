@@ -14,6 +14,8 @@ Cloud and cybersecurity professional with 10+ years of IT infrastructure experie
 - AWS Cloud Practitioner
 - CompTIA Security+ *(completed full CertMaster Learn + Labs pathway — 15 domains)*
 - ISC² Certified in Cybersecurity (CC)
+- CCNA Exploration: Routing Protocols and Concepts
+- CCNA Exploration: Access the WAN
 
 📎 [LinkedIn](https://www.linkedin.com/in/lereko-mohlomi/)
 
@@ -27,18 +29,36 @@ Cloud and cybersecurity professional with 10+ years of IT infrastructure experie
 
 | # | Lab | Technique | Status |
 |---|-----|-----------|--------|
-| 01 | [Directory Traversal](./security-plus/penetration-testing/01-directory-traversal.md) | Path Traversal / LFI | ✅ Complete |
-| 02 | [Command Injection](./security-plus/penetration-testing/02-command-injection.md) | OS Command Injection | ✅ Complete |
-| 03 | [File Upload & Reverse Shell](./security-plus/penetration-testing/03-file-upload-webshell.md) | RCE via File Upload + Metasploit | ✅ Complete |
+| 01 | [Directory Traversal](./penetration-testing/01-directory-traversal.md) | Path Traversal / LFI | ✅ Complete |
+| 02 | [Command Injection](./penetration-testing/02-command-injection.md) | OS Command Injection | ✅ Complete |
+| 03 | [File Upload & Reverse Shell](./penetration-testing/03-file-upload-webshell.md) | RCE via File Upload + Metasploit | ✅ Complete |
 
 **Vulnerability Management**
 
 | # | Lab | Technique | Status |
 |---|-----|-----------|--------|
-| 04 | [SQL Injection Exploitation](./security-plus/vulnerability-management/01-sql-injection-exploitation.md) | Boolean Logic, UNION-based Extraction, Schema Enumeration | ✅ Complete |
-| 05 | [SQLi Log Investigation](./security-plus/vulnerability-management/02-sqli-log-investigation.md) | Apache Log Analysis, IoC Identification, Percent-Encoding | ✅ Complete |
-| 06 | [Threat Feeds & Exploit Database](./security-plus/vulnerability-management/03-threat-feeds-exploit-db.md) | Threat Intelligence, AlienVault OTX, Exploit-DB, GHDB | ✅ Complete |
-| 07 | [Vulnerability Scanning (GSA/OpenVAS)](./security-plus/vulnerability-management/04-vulnerability-scanning.md) | Credentialed Scanning, CVE/NVD, CVSS v3.1 | ✅ Complete |
+| 04 | [SQL Injection Exploitation](./vulnerability-management/01-sql-injection-exploitation.md) | Boolean Logic, UNION-based Extraction, Schema Enumeration | ✅ Complete |
+| 05 | [SQLi Log Investigation](./vulnerability-management/02-sqli-log-investigation.md) | Apache Log Analysis, IoC Identification, Percent-Encoding | ✅ Complete |
+| 06 | [Threat Feeds & Exploit Database](./vulnerability-management/03-threat-feeds-exploit-db.md) | Threat Intelligence, AlienVault OTX, Exploit-DB, GHDB | ✅ Complete |
+| 07 | [Vulnerability Scanning (GSA/OpenVAS)](./vulnerability-management/04-vulnerability-scanning.md) | Credentialed Scanning, CVE/NVD, CVSS v3.1 | ✅ Complete |
+
+**Incident Response & Detection**
+
+| # | Lab | Technique | Status |
+|---|-----|-----------|--------|
+| 08 | [Detecting Logon Events with Wazuh](./incident-response/01-detecting-logon-events-wazuh.md) | Hydra Brute-Force, SMB Mounting, SIEM Alert Review | ✅ Complete |
+| 09 | [Detecting Anti-Forensics with Wazuh](./incident-response/02-detecting-anti-forensics-wazuh.md) | Audit Log Clearing, Anti-Forensics Detection | ✅ Complete |
+| 10 | [Root Cause Analysis: Security Alert](./incident-response/03-root-cause-analysis-security-alert.md) | Audit Policy Tampering, RDP Lateral Movement, Event Viewer | ✅ Complete |
+| 11 | [Root Cause Analysis: Breach Investigation](./incident-response/04-root-cause-analysis-breach-investigation.md) | Phishing → Proxy Hijack → Credential Theft → RDP → Audit Tampering | ✅ Complete |
+| 12 | [Network Sniffing with Wireshark](./incident-response/05-network-sniffing-wireshark.md) | Packet Capture, Display Filters, TCP/HTTP Stream Analysis | ✅ Complete |
+
+**Digital Forensics**
+
+| # | Lab | Technique | Status |
+|---|-----|-----------|--------|
+| 13 | [Forensic Drive Image Analysis](./digital-forensics/01-forensic-drive-image-hidden-partition.md) | fdisk, testdisk, fiwalk, fsstat, mmls, fls, istat (TSK) | ✅ Complete |
+| 14 | [Recovering Deleted Files](./digital-forensics/02-recovering-deleted-files.md) | tsk_recover, NTFS Undelete | ✅ Complete |
+| 15 | [File Carving](./digital-forensics/03-file-carving.md) | testdisk Carving, Boot Sector Rebuild, FAT16 Recovery | ✅ Complete |
 
 ---
 
@@ -67,43 +87,31 @@ Cloud and cybersecurity professional with 10+ years of IT infrastructure experie
 ## Repository Structure
 
 ```
-📁cybersecurity-labs
-   ├───📁digital-forensics
-   │       01-forensic-drive-image-hidden-partition.md
-   │       02-recovering-deleted-files.md
-   │       03-file-carving.md
-   │       README.md
-   │
-   ├───📁incident-response
-   │   │   01-detecting-logon-events-wazuh.md
-   │   │   02-detecting-anti-forensics-wazuh.md
-   │   │   03-root-cause-analysis-security-alert.md
-   │   │   04-root-cause-analysis-breach-investigation.md
-   │   │   05-network-sniffing-wireshark.md
-   │   │   README.md
-   │   │
-   │   └───📁screenshots
-   │           auditpol-no-auditing.jpg
-   │           dftt-sourceforge.png
-   │           fdisk-carve-fat.jpg
-   │           proxyset-bat-email.jpg
-   │           testdisk-file-listing.jpg
-   │           wazuh-rule-92653-92652.jpg
-   │           wireshark-dns-capture.jpg
-   │
-   ├───📁penetration-testing
-   │       01-directory-traversal.md
-   │       02-command-injection.md
-   │       03-file-upload-webshell.md
-   │       4.jpg
-   │       README.md
-   │
-   └───📁vulnerability-management
-           01-sql-injection-exploitation.md
-           02-sqli-log-investigation.md
-           03-threat-feeds-exploit-db.md
-           04-vulnerability-scanning.md
-           README.md
+📁 cybersecurity-labs/
+├── README.md
+├── 📁 penetration-testing/
+│   ├── README.md
+│   ├── 01-directory-traversal.md
+│   ├── 02-command-injection.md
+│   └── 03-file-upload-webshell.md
+├── 📁 vulnerability-management/
+│   ├── README.md
+│   ├── 01-sql-injection-exploitation.md
+│   ├── 02-sqli-log-investigation.md
+│   ├── 03-threat-feeds-exploit-db.md
+│   └── 04-vulnerability-scanning.md
+├── 📁 incident-response/
+│   ├── README.md
+│   ├── 01-detecting-logon-events-wazuh.md
+│   ├── 02-detecting-anti-forensics-wazuh.md
+│   ├── 03-root-cause-analysis-security-alert.md
+│   ├── 04-root-cause-analysis-breach-investigation.md
+│   └── 05-network-sniffing-wireshark.md
+└── 📁 digital-forensics/
+    ├── README.md
+    ├── 01-forensic-drive-image-hidden-partition.md
+    ├── 02-recovering-deleted-files.md
+    └── 03-file-carving.md
 ```
 
 ---
