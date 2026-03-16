@@ -105,7 +105,8 @@ Cloud and cybersecurity professional with 10+ years of IT infrastructure experie
 │   ├── README.md
 │   ├── 01-directory-traversal.md
 │   ├── 02-command-injection.md
-│   └── 03-file-upload-webshell.md
+│   ├── 03-file-upload-webshell.md
+│   └── metasploit.jpg
 └── 📁 vulnerability-management/
     ├── README.md
     ├── 01-sql-injection-exploitation.md
