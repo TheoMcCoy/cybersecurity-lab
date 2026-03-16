@@ -63,8 +63,6 @@ Searched wazuh for **jaime** to locate the logon event preceding the audit polic
 | Event Record ID | 17404 |
 | Time of RDP alert | 17:05:26 |
 
-> Scored question answered correctly: Remote Desktop Connection (RDP)
-
 **Why this is suspicious:** The jaime account normally operates from PC10 (10.1.24.101) — their assigned workstation. The RDP connection came from **10.1.16.2**, which is MS10 — an older Windows Server 2016 system in the server subnet, not a standard user workstation. Establishing an RDP connection from a server to a domain controller, followed immediately by audit policy changes, is a significant red flag.
 
 ---
@@ -81,13 +79,7 @@ From an elevated Command Prompt on DC10:
 auditpol /get /category:*
 ```
 
-**Result:**
-
-| Finding | Value |
-|---------|-------|
-| Audit policy status | **No Auditing** |
-
-> Scored question answered correctly: No Auditing
+![auditpol.jpg](./images/auditpol.jpg)
 
 This confirms that auditing was fully disabled across all categories on DC10. The wazuh alerts were accurate — the jaime account (or whoever used it) systematically stripped the auditing configuration.
 
@@ -107,7 +99,6 @@ Opened **Event Viewer → Windows Logs → Security** on DC10 and searched by Ev
 | Logon type | **10 (RemoteInteractive)** |
 | Source IP | 10.1.16.2 (MS10) |
 
-> Scored question answered correctly: Logon type 10 = RemoteInteractive (Remote Desktop)
 
 **Windows logon type reference:**
 
