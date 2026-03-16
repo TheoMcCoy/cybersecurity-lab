@@ -162,6 +162,7 @@ Returned to the wazuh Security events page and located alerts for the mount atte
 | SMB mount with jaime / Pa$$w0rd | Logon failure — insufficient privileges | Rule 60122 — Logon failure |
 | SMB mount with administrator / Pa$$w0rd | Logon success — C$ share mounted | Rule 60106 — Logon success |
 
+![wazuh-rule-92653-92652.jpg](./images/wazuh-rule-92653-92652.jpg)
 ---
 
 ## Key Takeaway
