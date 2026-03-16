@@ -78,10 +78,9 @@ From Command Prompt on PC10:
 ```cmd
 cd c:\ && dir is proxyset.bat
 ```
+![proxy-batch-file.jpg](./images/proxy-batch-file.jpg)
 
 **Result:** `proxyset.bat` confirmed present at `C:\Users\jaime\Downloads`
-
-> Scored question answered correctly: `c:\Users\jaime\Downloads`
 
 This confirms Jaime clicked the System Update link, downloaded the batch script, and executed it.
 
@@ -99,7 +98,6 @@ The script changed Firefox browser proxy settings — redirecting all Firefox tr
 
 Confirmed in Firefox: **Settings → Network Settings** showed **Manual proxy configuration** pointing to MS10.
 
-> Scored question answered correctly: Manual proxy configuration
 
 **Effect:** Any website Jaime visited through Firefox after executing this script had its traffic routed through MS10 — where Dylan was logged in and monitoring.
 
@@ -128,9 +126,9 @@ This confirmed that Jaime's browser, configured to use MS10 as a proxy, routed t
 
 **Destination port:** `80` — plaintext HTTP (not HTTPS)
 
-> Scored question answered correctly: Port 80 — plaintext communication
-
 **Timestamp on the firewall event:** `2023-04-01T00:54:25` UTC = `5:54 PM` local (Pacific Time, UTC-7h) on 31 March 2023 — consistent with the rest of the attack timeline.
+
+![opensense-fireewall.jpg](./images/opensense-firewall.jpg)
 
 ---
 
