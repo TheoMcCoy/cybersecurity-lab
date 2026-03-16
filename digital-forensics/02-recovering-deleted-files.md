@@ -96,8 +96,6 @@ The recovered files were not all located in the root of the output directory —
 | frag3.dat | Subdirectory |
 | mult2.dat | Subdirectory |
 
-> Scored question answered correctly: frag3.dat and mult2.dat
-
 The `frag1.dat` and `sing1.dat` files were located in the root of the output directory, not in subdirectories.
 
 ---
