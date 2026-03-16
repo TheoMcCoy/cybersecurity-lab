@@ -93,20 +93,30 @@ Cloud and cybersecurity professional with 10+ years of IT infrastructure experie
 │   ├── README.md
 │   ├── 01-forensic-drive-image-hidden-partition.md
 │   ├── 02-recovering-deleted-files.md
-│   └── 03-file-carving.md
+│   ├── 03-file-carving.md
+│   └── 📁 images/
+│           fdisk.jpg
 ├── 📁 incident-response/
 │   ├── README.md
 │   ├── 01-detecting-logon-events-wazuh.md
 │   ├── 02-detecting-anti-forensics-wazuh.md
 │   ├── 03-root-cause-analysis-security-alert.md
 │   ├── 04-root-cause-analysis-breach-investigation.md
-│   └── 05-network-sniffing-wireshark.md
+│   ├── 05-network-sniffing-wireshark.md
+│   └── 📁 images/
+│           auditpol.jpg
+│           opensense-firewall.jpg
+│           opensense.jpg
+│           proxy-batch-file.jpg
+│           testdisk-file-listing.jpg
+│           wazuh-rule-92653-92652.jpg
 ├── 📁 penetration-testing/
 │   ├── README.md
 │   ├── 01-directory-traversal.md
 │   ├── 02-command-injection.md
 │   ├── 03-file-upload-webshell.md
-│   └── metasploit.jpg
+│   └── 📁 images/
+│           metasploit.jpg
 └── 📁 vulnerability-management/
     ├── README.md
     ├── 01-sql-injection-exploitation.md
