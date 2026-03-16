@@ -70,6 +70,7 @@ fdisk -l 11-carve-fat.dd
 
 Result: **Partial output** — the Disk identifier value was all zeros, and no partition table was displayed. Confirms the drive image is damaged at the partition table level.
 
+![fdisk.jpg](./images/fdisk.jpg)
 ### Step 3 — fiwalk
 
 ```bash
