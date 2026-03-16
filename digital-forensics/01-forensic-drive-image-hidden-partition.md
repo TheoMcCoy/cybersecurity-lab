@@ -64,15 +64,11 @@ fdisk -l ext-part-test-2.dd
 | Formattable partitions displayed | **5** |
 | Logical drives in extended partition | 2 (sizes: 52353 and 50337 sectors) |
 
-> Scored question answered correctly: 5 formattable partitions
-
-**MBR partition context:** MBR-based drives support a maximum of 4 primary partitions. The 4th primary partition can be converted to an **Extended partition**, which can then be subdivided into multiple **logical drives** — allowing more than 4 formatted volumes. The extended partition itself is not directly formattable.
+**MBR partition context:** MBR-based drives support a maximum of 4 primary partitions. The 4th primary partition can be converted to an **Extended partition**, which can then be subdivided into multiple **logical drives** — allowing more than 4 formatted volumes. The extended partition itself cannot be directly formatted.
 
 **Unaccounted sectors:** The extended partition showed more sectors than the two logical drives accounted for. Possible explanations:
 - A hidden logical drive within the extended partition
 - Unused space not allocated to any logical drive
-
-> Scored questions answered correctly: **A hidden logical drive** and **Unused space not allocated to a logical drive**
 
 ---
 
@@ -94,7 +90,7 @@ This extra entry is the hidden partition that fdisk could not detect. testdisk u
 fiwalk ext-part-test-2.dd | less
 ```
 
-fiwalk is a TSK-based tool that walks through a drive image and reports on every file system and file it can identify. In this image, each partition contained a text file named after the partition — providing a breadcrumb trail confirming partition boundaries.
+fiwalk is a TSK-based tool that walks through a drive image and reports on every file system and file it can identify. In this image, each partition contained a text file named after the partition, providing a breadcrumb trail confirming its boundaries.
 
 ---
 
@@ -120,7 +116,7 @@ Result: **Error — invalid magic value.** The initial partition table is corrup
 mmls ext-part-test-2.dd
 ```
 
-mmls is a TSK tool that displays the layout of all partitions including their sector offsets. The **Start** column shows the sector offset for each division.
+mmls is a TSK tool that displays the layout of all partitions, including their sector offsets. The **Start** column shows the sector offset for each division.
 
 **Key finding:** The hidden extended volume was identified as **line 14** in the mmls output.
 
@@ -159,7 +155,7 @@ istat -f fat16 ext-part-test-2.dd -o 262143 3
 # File in root of drive named second-3.txt
 
 istat -f fat16 ext-part-test-2.dd -o 262143 4
-# SECOND-3.txt with timestamps — file was present before partition was hidden
+# SECOND-3.txt with timestamps — file was present before the partition was hidden
 # Deleted or corrupted — unable to be restored
 
 istat -f fat16 ext-part-test-2.dd -o 262143 5
